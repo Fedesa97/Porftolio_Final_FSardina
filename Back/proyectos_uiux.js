@@ -19,7 +19,7 @@ export const proyecto8 = {
     nombre: "- App MarketFind -",
     fecha: "Viernes 21 de Julio de 2023",
     descripcion: "MarketFind es tu aplicación para comprar en el supermercado desde tu teléfono. Encuentra y compra productos fácilmente, y también localiza su posición en las estanterías del supermercado. Simplificamos tu experiencia de compra, ahorrándote tiempo y esfuerzo",
-    img: ["/img/UI_UX/Market/Portada_Market.jpg"]
+    img: ["/img/UI_UX/Market/Portada_Market.jpg", "/img/UI_UX/Market/1.jpg"]
 };
 
 
