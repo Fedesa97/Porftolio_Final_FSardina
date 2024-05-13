@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+  margin: 0; padding: 0;
+  text-decoration: none;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+.contenedor {
+    background-color:#16355d;
+    padding-top: 15em;
+}
+
+#trabajos_uiux, #trabajos_web, #trabajos_grafico{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0px auto;
+    background-image: linear-gradient(155deg, #2b9bb469, #2424518c);
+    border-radius: 2em;
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.2);
+}
+
+/*------------------------ENCABEZADO-------------------------------------*/
+
+.encabezado{
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background-color:white;
+  overflow: hidden;
+}
+
+.buscador{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+}
+
+.buscador nav a{
+  padding-right: 1em;
+  color: #16355d;
+}
+
+h1, h2{
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.abstract{
+  padding: 2em;
+  text-align: center;
+}
+
+.abstract h1{
+color: #16355d;
+font-size: 6em;
+}
+
+.portfolio{
+color: #16355d;
+margin: 1em 0 1.5em 0;
+}
+
+.abstract h2{
+line-height: 2em;
+}
+
+.cuerpo_viaje{
+color: #16355d;
+}
+
+.abstract img{
+padding-top: 2.5em;
+width: 1%;
+}
+
+.contenedor h1{
+padding: 4em 0 2em 0;
+}
+
+.contenedor h2{
+padding-top: 3em;
+}
+
+.titulo_viaje{
+color: #16355d;
+padding-top: 5em;
+}
+
+/*SECCION OLAS*/
+
+section .wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(/img/wave.png);
+  background-size: 1000px 100px;
+}
+
+section .wave.wave1{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+section .wave.wave2{
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .wave.wave3{
+  animation: animate 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+section .wave.wave4{
+  animation: animate 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+
+/*--------------CLASES PARA TODA LA HOME---------------------*/
+
+#informacion_uiux, #informacion_web, #informacion_grafico{
+    display: flex;
+    justify-content: space-around;
+    padding: 1em;
+    margin-bottom: 12em;
+}
+
+article {
+    width: 45%;
+    padding: 1em;
+    margin-bottom: 2em;
+    opacity: 0; 
+    transition: opacity 2s ease-in-out; 
+  }
+
+
+.align-left {
+    float: left; 
+    clear: left; 
+  }
+  
+.align-right {
+    float: right;
+    clear: right; 
+  }
+
+.fade-in {
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out; 
+}
+
+.fade-in.visible {
+    opacity: 1; 
+}
+
+.image-container {
+    position: relative;
+    height: auto; 
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto; 
+    object-fit: cover; 
+    transition: transform 0.3s; 
+    border-radius: 1em;
+}
+
+.image-wrapper:hover img {
+    transform: scale(1.1); 
+}
+
+
+.image-container h2,
+.image-container p {
+    position: relative;
+    z-index: 2;
+}
+
+.floating-text {
+  position: relative;
+  animation: float 3s infinite alternate;
+}
+
+#trabajos_uiux h1, #trabajos_web h1, #trabajos_grafico h1{
+  color: white;
+  font-size: 2em;
+}
+
+
+/*---------------------------------FOOTER-------------------------------------*/
+
+footer, .programas_usados{
+    color: white;
+    text-align: center;
+}
+
+footer h2{
+   margin: 5em;
+}
+
+.redes img{
+    margin-right: 2em;
+    width: 3%;
+    margin-bottom: 3em;
+}
+
+
+/*--------------ESTILOS GENERALES - PÁGINA INDIVIDUAL DE CADA PROYECTO---------------------------*/
+
+.fondo_detalle{
+ background-image: url(/img/Fondo_Nuevo.png);
+  background-size: cover;
+}
+
+.volver_bitacora{
+  margin: 2em;
+}
+
+.volver_bitacora a{
+  color: #16355d;
+}
+
+.contenedor_grafico, .contenedor_web, .contenedor_uiux{
+    max-width: 1800px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.nav_detalle{
+  display: flex;
+  justify-content: space-between;
+}
+
+.programas_usados{
+  margin-bottom: 3em;
+}
+
+.programas_usados img{
+  margin-right: 2em;
+}
+
+
+
+/*----------------------------------PAGINA UI UX------------------------------------------------------------*/
+
+.imagenes_uiux {
+  width: 1080px; 
+  height: 750px; 
+  overflow: auto; 
+  margin: 4em  0 4em 12em;
+  box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.5);
+}
+
+.imagenes_uiux img {
+  width: 100%; 
+  display: block; 
+  margin: auto; 
+}
+
+
+/*--------------------------------------------PAGINA WEB------------------------------------------------------*/
+
+.imagenes_web{
+  margin-top: 3em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.video{
+  width: 70%;
+  margin: 5em 0 4em 13em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 15px 0px rgb(0, 0, 0, 0.5);
+}
+
+
+/*---------------------------------PAGINA GRAFICO-----------------------------------------------------*/
+
+.carousel {
+  display: flex;
+  overflow-x: hidden; 
+  margin-top: 5em;
+}
+
+.carousel img {
+  width: 30%;
+  height: auto;
+  margin-right: 3em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.botones{
+  text-align: center;
+  margin: 4em 0 4em 0;
+}
+
+#prevBtn, #nextBtn{
+  border: none;
+  background-color: transparent;
+  color: #03142a;
+  margin-right: 2em;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+#titulo_detalle{
+  font-size: 3em;
+  color: #03142a;
+}
+
+#fecha{
+  text-align: right;
+  margin: 3em 0 3em 0;
+  color: #03142a;
+}
+
+#descripcion{
+  font-size: 1.2em;
+  color: #03142a;
+  line-height: 1.5em;
+}
+
+
+/*-----------------------------------------ANIMACIONES----------------------------------------------------------*/
+
+/*OLAS*/
+
+@keyframes animate{
+
+  0%{
+      background-position-x: 0;
+  }
+  100%{
+      background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2{
+
+  0%{
+      background-position-x: 0;
+  }
+  100%{
+      background-position-x: -1000px;
+  }
+}
+
+
+/*ENTRADA PROYECTOS*/
+
+@keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-20px);
+    }
+  }
+
+
+  /* Eliminar la barra de desplazamiento en WebKit (Chrome, Safari) */
+/*::-webkit-scrollbar {
+  display: none;
+}*/
+
+/* Cambiar el color de fondo de la barra de desplazamiento (opcional) */
+/* Si no deseas cambiar el color, puedes omitir esta regla */
+::-webkit-scrollbar-track {
+  background-color: #241b6e; /* Cambia el color a tu preferencia */
+}
+
+
+
+  /*Foto de <a href="https://unsplash.com/es/@unstable_affliction?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ivan Bandura</a> en <a href="https://unsplash.com/es/fotos/agua-de-mar-azul-2FEE6BR343k?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+
+  <a href="https://www.freepik.es/psd-gratis/diseno-mock-up-telefono-movil_1016560.htm#fromView=search&page=1&position=29&uuid=02aac973-c438-4aca-ab31-1ee33571cdd5">Imagen de ydlabs</a> en Freepik
+
+  <a href="https://www.flaticon.com/free-icons/figma" title="figma icons">Figma icons created by Freepik - Flaticon</a>
+  
+
